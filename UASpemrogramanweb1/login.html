@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" integrity="" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="gambar/logo-removebg-preview.png" alt="Logo Perpustakaan" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+                
+    <main class="login-page">
+        <section class="login-container">
+            <h2>Login ke Akun Anda</h2>
+            <div class="icon-container">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <form action="backend/proses_login.php" method="POST" id="loginForm">
+                <div class="input-group">
+                    <label for="username"><i class="fas fa-user"></i> Username</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                </div>
+                <button type="submit" class="btn-submit">Login</button>
+                <p class="register-link">Belum punya akun? <a href="register.html">Daftar di sini</a>.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 perpuskuy MRIDWANNAOFAL</p>
+    </footer>
+</body>
+</html>
